@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" >
+  {% include head.html %}
+
+  <body>
+  <header style="line-height: .5rem;">
+    <p style="font-size: .8rem; font-weight: 700;">Benjamin Buzek</p><br/>
+    <p style="font-size: .8rem; color: #666666">Personal Website &middot; <script>document.write(new Date().getFullYear())</script></p><br/>
+  </header>
+    <main role="main">
+      {% include navigation.html %}
+
+      {{ content }}
+
+    </main>
+  </body>
+</html>

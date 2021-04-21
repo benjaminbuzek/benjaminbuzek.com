@@ -1,0 +1,16 @@
+<header role="banner">
+<nav role="navigation">
+    <ul>
+       {% for item in site.data.navigation.links %}
+        <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+       {% endfor %}
+    </ul>
+    <br/>
+</nav>
+<nav-small>
+    <ul>
+        <li><a href="/">Imprint</a></li>
+        <li><a href="/">Privacy Policy</a></li>
+    </ul>
+</nav-small>
+</header>
